@@ -243,8 +243,8 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://peaceful-tulumba-8383c6.netlify.app/",
-    live_link: "https://peaceful-tulumba-8383c6.netlify.app/",
+    source_code_link: "https://tourmaline-sundae-a390ce.netlify.app/",
+    live_link: "https://tourmaline-sundae-a390ce.netlify.app/",
   },
   {
     name: "Valentine’s Day",
@@ -279,7 +279,7 @@ const projects = [
     ],
     image: inkSync,
     source_code_link: "https://github.com/sahilmaurya2006/valentine-s-",
-    live_link: "https://github.com/sahilmaurya2006/valentine-s-",
+    live_link: "https://jovial-kringle-430129.netlify.app/",
   },
   {
     name: "Network Intrusion Detection System",
