@@ -247,29 +247,29 @@ const projects = [
     live_link: "https://tourmaline-sundae-a390ce.netlify.app/",
   },
   {
-    name: "Valentine’s Day",
+    name: "website security scanner",
     description:
-      "It’s a Valentine’s Day themed landing page with animations and gift recommendations.",
+      "A sleek web that scans websites for security misconfigurations and instantly highlights risk levels with a clean, modern dashboard.",
     features: [
-      "💌 Interactive Valentine Prompt with playful “Yes / No” logic",
-      "💓 Heartbeat Vibration Effect using device vibration API",
-      "⌨️ Typewriter Text Animation for emotional storytelling",
+      "Fast website security scanning",
+      "Clear risk score & grade",
+      "Modern, easy-to-read dashboard",
     ],
     tags: [
       {
-        name: "html5",
+        name: "Security APIs",
         color: "blue-text-gradient",
       },
       {
-        name: "javascript",
+        name: "Express",
         color: "green-text-gradient",
       },
       {
-        name: "vanillajs",
+        name: "Axios",
         color: "pink-text-gradient",
       },
       {
-        name: "web-animations",
+        name: "React.js",
         color: "orange-text-gradient",
       },
       {
@@ -278,8 +278,8 @@ const projects = [
       },
     ],
     image: inkSync,
-    source_code_link: "https://github.com/sahilmaurya2006/valentine-s-",
-    live_link: "https://jovial-kringle-430129.netlify.app/",
+    source_code_link: "https://github.com/sahilmaurya2006/website-security-scanner",
+    live_link: "https://website-security-scanner-sbnd.vercel.app/",
   },
   {
     name: "Network Intrusion Detection System",
