@@ -206,15 +206,15 @@ const projects = [
     live_link: "https://github.com/sahilmaurya2006/digital-forensics-file-analyzer",
   },
   {
-    name: "Nadire Chocolatier",
+    name: "CafeGPT AI Café Ordering Assistant",
     description:
-      "Nadire Chocolatier is an elegant, premium-style landing website crafted for a luxury chocolate brand. The website focuses on visual storytelling, smooth animations, and high-end aesthetics to showcase handcrafted chocolates and create a refined brand presence online.",
+      "An AI chatbot that takes café orders using natural language. It understands requests, suggests items, and processes orders automatically. ☕🤖",
     features: [
-      "🏠 Hero Landing Section with immersive visuals",
-      "📖 About Us section highlighting brand story",
-      "🍬 Menu / Collection Showcase",
-      "📅 Bookings Section for customer engagement",
-      "📱 Fully responsive design for all devices",
+      "1️⃣ Natural Language Ordering Customers can order using simple chat messages.",
+      "2️⃣ Smart Menu Recognition  AI detects and validates menu items automatically.",
+      "3️⃣ Dynamic Cart Management  Add, modify, or remove items during conversation.",
+      "4️⃣ Session Tracking – Maintains conversation context and user cart state.",
+      "5️⃣ Automated Order Processing – Orders are structured and stored in the database. ☕🤖",
     ],
     tags: [
       {
@@ -243,8 +243,8 @@ const projects = [
       },
     ],
     image: carrent,
-    source_code_link: "https://tourmaline-sundae-a390ce.netlify.app/",
-    live_link: "https://tourmaline-sundae-a390ce.netlify.app/",
+    source_code_link: "https://github.com/sahilmaurya2006/ai-cafe-ordering",
+    live_link: "https://github.com/sahilmaurya2006/ai-cafe-ordering",
   },
   {
     name: "website security scanner",
