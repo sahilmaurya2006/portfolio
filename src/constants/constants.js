@@ -218,23 +218,23 @@ const projects = [
     ],
     tags: [
       {
-        name: "react",
+        name: "nodejs",
         color: "blue-text-gradient",
       },
       {
-        name: "html",
+        name: "expressjs",
         color: "green-text-gradient",
       },
       {
-        name: "css",
+        name: "mongodb",
         color: "pink-text-gradient",
       },
       {
-        name: "nextjs",
+        name: "ai",
         color: "orange-text-gradient",
       },
       {
-        name: "javascript ",
+        name: "chatbot ",
         color: "blue-text-gradient",
       },
       {
