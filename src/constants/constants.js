@@ -379,27 +379,27 @@ const experiences = [
 const testimonials = [
   {
     testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
+      "Sahil demonstrated exceptional dedication during the CyberZero internship. His grasp of digital forensics, threat analysis, and ethical hacking is well beyond his experience level.",
+    name: "Anmol Kumar",
+    designation: "President",
+    company: "Cyber Shakti Foundation",
+    image: "/1718264839341.jpg",
   },
   {
     testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
+      "Sahil showed great commitment throughout the CyberZero internship program. His technical foundation in cybersecurity and incident response was impressive for a 2nd year student.",
+    name: "Dr. Lalit Gupta",
+    designation: "President",
+    company: "Cybersecurity Council of India",
+    image: "https://cybersecindiaexpo.com/images/DrLalitGupta.jpg",
   },
   {
     testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
+      "Sahil is a curious and persistent learner. His understanding of security concepts and practical application in projects reflects a strong cybersecurity mindset.",
+    name: "Dr. Arvind Prasad",
+    designation: "Assistant Professor, Cybersecurity & AI",
+    company: "GLA University",
+    image: "/1737814787990.jpg",
   },
 ];
 

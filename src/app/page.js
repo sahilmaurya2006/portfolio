@@ -25,6 +25,7 @@ export default function Home() {
               <Tech />
             </div>
             <Works />
+            <Feedbacks />
             <Contact />
           </div>
           <StarsCanvas />
