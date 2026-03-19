@@ -336,7 +336,7 @@ const experiences = [
     ],
   },
   {
-    title: "CTF Participant",
+    title: "CTF Player",
     company_name: "AISS 2025 — DSCI (NASSCOM Initiative)",
     icon: speedvitals,
     iconBg: "#E6DEDD",
@@ -349,7 +349,7 @@ const experiences = [
     ],
   },
   {
-    title: "Digital Forensics Developer (Personal Project)",
+    title: "Digital Forensics Developer",
     company_name: "Digital Forensics File Analyzer",
     icon: speedvitals,
     iconBg: "#383E56",
