@@ -20,12 +20,11 @@ export default function Home() {
         <div className="bg-primary relative z-[1] h-full">
           <div className="relative z-[1]">
             <About />
-            {/* <Experience /> */}
+            <Experience />
             <div className="overflow-hidden">
               <Tech />
             </div>
             <Works />
-            {/* <Feedbacks /> */}
             <Contact />
           </div>
           <StarsCanvas />
