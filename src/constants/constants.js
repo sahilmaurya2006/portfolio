@@ -323,55 +323,101 @@ const projects = [
 
 const experiences = [
   {
+    title: "Bug Bounty Researcher",
+    company_name: "Indrajala Movie Makers LLP",
+    icon: speedvitals,
+    iconBg: "#1d1836",
+    date: "Mar 2026",
+    tags: ["Bug Bounty", "RCE", "CVE", "Web Security", "Misconfiguration"],
+    links: [
+      {
+        label: "View Report",
+        url: "/reports/indrajala.pdf",
+      },
+    ],
+    points: [
+      "Identified publicly exposed pgAdmin instance due to misconfigured routing and TLS certificate misbinding.",
+      "Discovered missing rate limiting on authentication endpoint enabling large-scale brute-force attacks.",
+      "Chained vulnerabilities with CVE-2026-1707 to demonstrate potential remote code execution (RCE).",
+      "Showed risk of full database compromise including user data, transactions, and internal systems.",
+      "Delivered a structured vulnerability report with attack chain, impact analysis, and remediation guidance.",
+    ],
+  },
+
+  {
+    title: "Web Application Security Researcher",
+    company_name: "Responsible Disclosure — Panchsheel Public School",
+    icon: speedvitals,
+    iconBg: "#100d25",
+    date: "Mar 2026",
+    tags: ["OWASP", "PTES", "RDP", "Attack Chain", "Web Security"],
+    links: [
+      {
+        label: "View Report",
+        url: "/reports/panchsheel.pdf",
+      },
+    ],
+    points: [
+      "Performed full-scope security assessment of ERP and web infrastructure using OWASP Testing Guide v4 and PTES.",
+      "Identified 7 vulnerabilities including exposed RDP (3389), directory listing, legacy ASP.NET disclosure, and insecure HTTPS configuration.",
+      "Detected supply chain risk via external script inclusion and insecure client-side dependencies.",
+      "Mapped a realistic multi-step attack chain leading to potential full server compromise.",
+      "Produced a professional security report with CVSS scoring, technical evidence, and prioritized remediation roadmap.",
+    ],
+  },
+
+  {
+    title: "Digital Forensics Developer",
+    company_name: "Digital Forensics File Analyzer — Personal Project",
+    icon: speedvitals,
+    iconBg: "#1d1836",
+    date: "Feb 2026",
+    tags: ["Python", "Forensics", "Automation", "Security Tools"],
+    links: [
+      {
+        label: "Source Code",
+        url: "https://github.com/sahilmaurya2006/digital-forensics-file-analyzer",
+      },
+    ],
+    points: [
+      "Built a Python-based forensic toolkit for automated file analysis and investigation workflows.",
+      "Implemented hashing (MD5, SHA-256) for integrity verification and duplicate detection.",
+      "Developed modules for USB activity tracking, browser history analysis, and suspicious file detection.",
+      "Automated structured forensic report generation in CSV, JSON, and PDF formats.",
+    ],
+  },
+
+  {
     title: "Cybersecurity Intern",
     company_name: "CyberZero × Cybersecurity Council of India",
     icon: speedvitals,
-    iconBg: "#383E56",
+    iconBg: "#100d25",
     date: "Oct 2025 - Nov 2025",
+    tags: ["Pentesting", "Threat Intelligence", "Incident Response"],
     points: [
-      "Completed a 45-day intensive internship covering Network & Web Security, Ethical Hacking, and Penetration Testing.",
-      "Gained hands-on experience in Cyber Threat Intelligence and Incident Response workflows.",
-      "Worked on Malware Analysis, Digital Forensics, and Cyber Defense strategies.",
-      "Mentored by Mr. Anmol Kumar (Founder, CyberZero) and Dr. Lalit Gupta (President, Cybersecurity Council of India).",
+      "Worked on network security, web security, and penetration testing in practical lab environments.",
+      "Performed vulnerability analysis, threat intelligence, and incident response simulations.",
+      "Explored malware analysis techniques and digital forensics investigation workflows.",
     ],
   },
-  {
-    title: "CTF Player",
-    company_name: "AISS 2025 — DSCI (NASSCOM Initiative)",
-    icon: speedvitals,
-    iconBg: "#E6DEDD",
-    date: "Dec 2025",
-    points: [
-      "Participated in the Cybersecurity Hackathon (CTF) at the 20th Annual Information Security Summit organized by DSCI.",
-      "Solved challenges covering vulnerability analysis, attack vectors, and ethical hacking under time pressure.",
-      "Collaborated with teammate Saurabh Tiwari in a professional national-level security environment.",
-      "Gained practical exposure to real-world cybersecurity scenarios and incident response strategies.",
-    ],
-  },
-  {
-    title: "Digital Forensics Developer",
-    company_name: "Digital Forensics File Analyzer",
-    icon: speedvitals,
-    iconBg: "#383E56",
-    date: "2025",
-    points: [
-      "Built a comprehensive Python-based digital forensics toolkit with modules for metadata extraction, keyword scanning, and suspicious file detection.",
-      "Implemented USB audit trail tracking, Windows artifacts analysis, and GPS mapping from file metadata.",
-      "Developed a keylogger detector and browser history tracker for forensic investigation support.",
-      "Automated structured forensic report generation for investigative and audit use cases.",
-    ],
-  },
+
   {
     title: "Top 3% Global Learner",
     company_name: "TryHackMe",
     icon: speedvitals,
-    iconBg: "#E6DEDD",
+    iconBg: "#1d1836",
     date: "2025 - Present",
+    tags: ["CTF", "Web Exploitation", "Privilege Escalation", "OSINT"],
+    links: [
+      {
+        label: "Profile",
+        url: "https://tryhackme.com/p/cyberZero",
+      },
+    ],
     points: [
-      "Ranked in the top 3% of TryHackMe users globally out of hundreds of thousands of learners.",
-      "Completed hands-on rooms covering Penetration Testing, Web Exploitation, Privilege Escalation, and OSINT.",
+      "Ranked in the top 3% globally among TryHackMe users.",
+      "Completed hands-on labs in web exploitation, privilege escalation, networking, and OSINT.",
       "Practiced real-world attack and defense techniques in isolated lab environments.",
-      "Consistently solving challenges in Networking, Linux, Cryptography, and Reverse Engineering.",
     ],
   },
 ];
