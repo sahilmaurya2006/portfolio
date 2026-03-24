@@ -6,19 +6,8 @@ import { fadeIn } from "../utils/motion";
 function Skills({ name, icon, index }) {
   const ref = React.useRef(null);
   const [position, setPosition] = React.useState({ x: 0, y: 0 });
-  const [isMobile, setIsMobile] = React.useState(false);
-
-  React.useEffect(() => {
-    const checkMobile = () => {
-      setIsMobile(window.innerWidth < 768);
-    };
-    checkMobile();
-    window.addEventListener("resize", checkMobile);
-    return () => window.removeEventListener("resize", checkMobile);
-  }, []);
 
   const onMouseMove = (e) => {
-    if (isMobile) return;
     const { clientX, clientY } = e;
     const { width, height, left, top } = ref.current.getBoundingClientRect();
     const x = clientX - (left + width / 2);
@@ -36,7 +25,7 @@ function Skills({ name, icon, index }) {
         ref={ref}
         onMouseMove={onMouseMove}
         onMouseLeave={onMouseLeave}
-        animate={{ x: isMobile ? 0 : x, y: isMobile ? 0 : y }}
+        animate={{ x, y }}
         transition={{
           type: "spring",
           stiffness: 190,

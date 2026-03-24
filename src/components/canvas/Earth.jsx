@@ -1,14 +1,14 @@
 "use client";
-import React, { Suspense, memo, useState, useEffect } from "react";
+import React, { Suspense, memo } from "react";
 import { Canvas } from "@react-three/fiber";
 import { OrbitControls, useGLTF } from "@react-three/drei";
 
 import CanvasLoader from "../Loader";
 
-const Earth = memo(function Earth({ scale }) {
+const Earth = memo(function Earth() {
   const earth = useGLTF("./planet/scene.gltf");
   return (
-    <primitive object={earth.scene} scale={scale} position-y={0} rotation-y={0} />
+    <primitive object={earth.scene} scale={2.5} position-y={0} rotation-y={0} />
   );
 });
 
@@ -16,29 +16,6 @@ const Earth = memo(function Earth({ scale }) {
 useGLTF.preload("./planet/scene.gltf");
 
 const EarthCanvas = memo(function EarthCanvas() {
-  const [isMobile, setIsMobile] = useState(false);
-  const [scale, setScale] = useState(2.5);
-  const [cameraPos, setCameraPos] = useState([-4, 3, 6]);
-
-  useEffect(() => {
-    const handleResize = () => {
-      const mobile = window.innerWidth < 768;
-      setIsMobile(mobile);
-      
-      if (mobile) {
-        setScale(1.5);
-        setCameraPos([-3, 2, 4]);
-      } else {
-        setScale(2.5);
-        setCameraPos([-4, 3, 6]);
-      }
-    };
-
-    handleResize();
-    window.addEventListener("resize", handleResize);
-    return () => window.removeEventListener("resize", handleResize);
-  }, []);
-
   return (
     <Canvas
       className="cursor-move"
@@ -50,10 +27,10 @@ const EarthCanvas = memo(function EarthCanvas() {
         preserveDrawingBuffer: false,
       }}
       camera={{
-        fov: isMobile ? 50 : 45,
+        fov: 45,
         near: 0.1,
         far: 200,
-        position: cameraPos,
+        position: [-4, 3, 6],
       }}
     >
       <Suspense fallback={<CanvasLoader />}>
@@ -66,7 +43,7 @@ const EarthCanvas = memo(function EarthCanvas() {
           minPolarAngle={Math.PI / 2}
         />
         <ambientLight intensity={0.25} />
-        <Earth scale={scale} />
+        <Earth />
       </Suspense>
     </Canvas>
   );
