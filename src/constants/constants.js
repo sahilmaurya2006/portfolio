@@ -63,15 +63,15 @@ export const navLinks = [
 
 const services = [
   {
-    title: "pentesting",
+    title: "Penetration Tester",
     icon: web,
   },
   {
-    title: "Full stack developer",
+    title: "Full Stack Developer",
     icon: mobile,
   },
   {
-    title: "Cybersecurity",
+    title: "Cybersecurity Analyst",
     icon: backend,
   },
   // {
@@ -135,6 +135,7 @@ const technologies = [
     name: "HTML 5",
     icon: html,
   },
+ 
   {
     name: "CSS 3",
     icon: css,
@@ -323,55 +324,68 @@ const projects = [
 
 const experiences = [
   {
+    title: "Security Researcher",
+    company_name: "Independent Research & Responsible Disclosure",
+    icon: speedvitals,
+    iconBg: "#383E56",
+    date: "2026 - Present",
+    points: [
+      "Identified security vulnerabilities in real-world web applications and reported them through responsible disclosure.",
+      "Performed web application security assessments using OWASP Testing Guide and PTES methodology.",
+      "Created detailed vulnerability reports with risk analysis and remediation strategies.",
+      "Maintained ethical standards by avoiding exploitation and ensuring safe disclosure practices.",
+    ],
+  },
+  {
     title: "Cybersecurity Intern",
     company_name: "CyberZero × Cybersecurity Council of India",
     icon: speedvitals,
-    iconBg: "#383E56",
+    iconBg: "#E6DEDD",
     date: "Oct 2025 - Nov 2025",
     points: [
-      "Completed a 45-day intensive internship covering Network & Web Security, Ethical Hacking, and Penetration Testing.",
-      "Gained hands-on experience in Cyber Threat Intelligence and Incident Response workflows.",
-      "Worked on Malware Analysis, Digital Forensics, and Cyber Defense strategies.",
-      "Mentored by Mr. Anmol Kumar (Founder, CyberZero) and Dr. Lalit Gupta (President, Cybersecurity Council of India).",
+      "Completed a 45-day intensive cybersecurity internship covering Web Security, Network Security, and Penetration Testing.",
+      "Worked on real-world scenarios involving Threat Intelligence and Incident Response workflows.",
+      "Performed Malware Analysis, Digital Forensics, and Cyber Defense exercises.",
+      "Mentored by industry experts including Anmol Kumar and Dr. Lalit Gupta.",
     ],
   },
   {
     title: "CTF Player",
     company_name: "AISS 2025 — DSCI (NASSCOM Initiative)",
     icon: speedvitals,
-    iconBg: "#E6DEDD",
+    iconBg: "#383E56",
     date: "Dec 2025",
     points: [
-      "Participated in the Cybersecurity Hackathon (CTF) at the 20th Annual Information Security Summit organized by DSCI.",
-      "Solved challenges covering vulnerability analysis, attack vectors, and ethical hacking under time pressure.",
-      "Collaborated with teammate Saurabh Tiwari in a professional national-level security environment.",
-      "Gained practical exposure to real-world cybersecurity scenarios and incident response strategies.",
+      "Participated in a national-level cybersecurity hackathon at AISS 2025 organized by DSCI.",
+      "Solved challenges in web exploitation, cryptography, and reverse engineering under time constraints.",
+      "Collaborated in a competitive team environment to analyze vulnerabilities and attack vectors.",
+      "Improved practical penetration testing and problem-solving skills.",
     ],
   },
   {
     title: "Digital Forensics Developer",
     company_name: "Digital Forensics File Analyzer",
     icon: speedvitals,
-    iconBg: "#383E56",
+    iconBg: "#E6DEDD",
     date: "2025",
     points: [
-      "Built a comprehensive Python-based digital forensics toolkit with modules for metadata extraction, keyword scanning, and suspicious file detection.",
-      "Implemented USB audit trail tracking, Windows artifacts analysis, and GPS mapping from file metadata.",
-      "Developed a keylogger detector and browser history tracker for forensic investigation support.",
-      "Automated structured forensic report generation for investigative and audit use cases.",
+      "Developed a Python-based digital forensics toolkit for metadata extraction and suspicious file detection.",
+      "Implemented USB tracking, Windows artifact analysis, and EXIF-based GPS mapping.",
+      "Built tools for keylogger detection and browser history analysis.",
+      "Automated structured forensic report generation for investigations.",
     ],
   },
   {
     title: "Top 3% Global Learner",
     company_name: "TryHackMe",
     icon: speedvitals,
-    iconBg: "#E6DEDD",
+    iconBg: "#383E56",
     date: "2025 - Present",
     points: [
-      "Ranked in the top 3% of TryHackMe users globally out of hundreds of thousands of learners.",
-      "Completed hands-on rooms covering Penetration Testing, Web Exploitation, Privilege Escalation, and OSINT.",
-      "Practiced real-world attack and defense techniques in isolated lab environments.",
-      "Consistently solving challenges in Networking, Linux, Cryptography, and Reverse Engineering.",
+      "Ranked in the top 3% globally on TryHackMe platform.",
+      "Completed labs covering Web Exploitation, Privilege Escalation, OSINT, and Networking.",
+      "Practiced real-world attack and defense techniques in simulated environments.",
+      "Consistently solving advanced challenges in Linux, Cryptography, and Security Analysis.",
     ],
   },
 ];
