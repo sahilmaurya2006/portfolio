@@ -63,15 +63,15 @@ export const navLinks = [
 
 const services = [
   {
-    title: "Penetration Tester",
+    title: "pentesting",
     icon: web,
   },
   {
-    title: "Full Stack Developer",
+    title: "Full stack developer",
     icon: mobile,
   },
   {
-    title: "Cybersecurity Analyst",
+    title: "Cybersecurity",
     icon: backend,
   },
   // {
@@ -135,7 +135,6 @@ const technologies = [
     name: "HTML 5",
     icon: html,
   },
- 
   {
     name: "CSS 3",
     icon: css,
@@ -324,68 +323,101 @@ const projects = [
 
 const experiences = [
   {
-    title: "Security Researcher",
-    company_name: "Independent Research & Responsible Disclosure",
+    title: "Bug Bounty Researcher",
+    company_name: "Indrajala Movie Makers LLP",
     icon: speedvitals,
-    iconBg: "#383E56",
-    date: "2026 - Present",
+    iconBg: "#1d1836",
+    date: "Mar 2026",
+    tags: ["Bug Bounty", "RCE", "CVE", "Web Security", "Misconfiguration"],
+    links: [
+      {
+        label: "View Report",
+        url: "/reports/indrajala.pdf",
+      },
+    ],
     points: [
-      "Identified security vulnerabilities in real-world web applications and reported them through responsible disclosure.",
-      "Performed web application security assessments using OWASP Testing Guide and PTES methodology.",
-      "Created detailed vulnerability reports with risk analysis and remediation strategies.",
-      "Maintained ethical standards by avoiding exploitation and ensuring safe disclosure practices.",
+      "Identified publicly exposed pgAdmin instance due to misconfigured routing and TLS certificate misbinding.",
+      "Discovered missing rate limiting on authentication endpoint enabling large-scale brute-force attacks.",
+      "Chained vulnerabilities with CVE-2026-1707 to demonstrate potential remote code execution (RCE).",
+      "Showed risk of full database compromise including user data, transactions, and internal systems.",
+      "Delivered a structured vulnerability report with attack chain, impact analysis, and remediation guidance.",
     ],
   },
+
+  {
+    title: "Web Application Security Researcher",
+    company_name: "Responsible Disclosure — Panchsheel Public School",
+    icon: speedvitals,
+    iconBg: "#100d25",
+    date: "Mar 2026",
+    tags: ["OWASP", "PTES", "RDP", "Attack Chain", "Web Security"],
+    links: [
+      {
+        label: "View Report",
+        url: "/reports/panchsheel.pdf",
+      },
+    ],
+    points: [
+      "Performed full-scope security assessment of ERP and web infrastructure using OWASP Testing Guide v4 and PTES.",
+      "Identified 7 vulnerabilities including exposed RDP (3389), directory listing, legacy ASP.NET disclosure, and insecure HTTPS configuration.",
+      "Detected supply chain risk via external script inclusion and insecure client-side dependencies.",
+      "Mapped a realistic multi-step attack chain leading to potential full server compromise.",
+      "Produced a professional security report with CVSS scoring, technical evidence, and prioritized remediation roadmap.",
+    ],
+  },
+
+  {
+    title: "Digital Forensics Developer",
+    company_name: "Digital Forensics File Analyzer — Personal Project",
+    icon: speedvitals,
+    iconBg: "#1d1836",
+    date: "Feb 2026",
+    tags: ["Python", "Forensics", "Automation", "Security Tools"],
+    links: [
+      {
+        label: "Source Code",
+        url: "https://github.com/sahilmaurya2006/digital-forensics-file-analyzer",
+      },
+    ],
+    points: [
+      "Built a Python-based forensic toolkit for automated file analysis and investigation workflows.",
+      "Implemented hashing (MD5, SHA-256) for integrity verification and duplicate detection.",
+      "Developed modules for USB activity tracking, browser history analysis, and suspicious file detection.",
+      "Automated structured forensic report generation in CSV, JSON, and PDF formats.",
+    ],
+  },
+
   {
     title: "Cybersecurity Intern",
     company_name: "CyberZero × Cybersecurity Council of India",
     icon: speedvitals,
-    iconBg: "#E6DEDD",
+    iconBg: "#100d25",
     date: "Oct 2025 - Nov 2025",
+    tags: ["Pentesting", "Threat Intelligence", "Incident Response"],
     points: [
-      "Completed a 45-day intensive cybersecurity internship covering Web Security, Network Security, and Penetration Testing.",
-      "Worked on real-world scenarios involving Threat Intelligence and Incident Response workflows.",
-      "Performed Malware Analysis, Digital Forensics, and Cyber Defense exercises.",
-      "Mentored by industry experts including Anmol Kumar and Dr. Lalit Gupta.",
+      "Worked on network security, web security, and penetration testing in practical lab environments.",
+      "Performed vulnerability analysis, threat intelligence, and incident response simulations.",
+      "Explored malware analysis techniques and digital forensics investigation workflows.",
     ],
   },
-  {
-    title: "CTF Player",
-    company_name: "AISS 2025 — DSCI (NASSCOM Initiative)",
-    icon: speedvitals,
-    iconBg: "#383E56",
-    date: "Dec 2025",
-    points: [
-      "Participated in a national-level cybersecurity hackathon at AISS 2025 organized by DSCI.",
-      "Solved challenges in web exploitation, cryptography, and reverse engineering under time constraints.",
-      "Collaborated in a competitive team environment to analyze vulnerabilities and attack vectors.",
-      "Improved practical penetration testing and problem-solving skills.",
-    ],
-  },
-  {
-    title: "Digital Forensics Developer",
-    company_name: "Digital Forensics File Analyzer",
-    icon: speedvitals,
-    iconBg: "#E6DEDD",
-    date: "2025",
-    points: [
-      "Developed a Python-based digital forensics toolkit for metadata extraction and suspicious file detection.",
-      "Implemented USB tracking, Windows artifact analysis, and EXIF-based GPS mapping.",
-      "Built tools for keylogger detection and browser history analysis.",
-      "Automated structured forensic report generation for investigations.",
-    ],
-  },
+
   {
     title: "Top 3% Global Learner",
     company_name: "TryHackMe",
     icon: speedvitals,
-    iconBg: "#383E56",
+    iconBg: "#1d1836",
     date: "2025 - Present",
+    tags: ["CTF", "Web Exploitation", "Privilege Escalation", "OSINT"],
+    links: [
+      {
+        label: "Profile",
+        url: "https://tryhackme.com/p/cyberZero",
+      },
+    ],
     points: [
-      "Ranked in the top 3% globally on TryHackMe platform.",
-      "Completed labs covering Web Exploitation, Privilege Escalation, OSINT, and Networking.",
-      "Practiced real-world attack and defense techniques in simulated environments.",
-      "Consistently solving advanced challenges in Linux, Cryptography, and Security Analysis.",
+      "Ranked in the top 3% globally among TryHackMe users.",
+      "Completed hands-on labs in web exploitation, privilege escalation, networking, and OSINT.",
+      "Practiced real-world attack and defense techniques in isolated lab environments.",
     ],
   },
 ];

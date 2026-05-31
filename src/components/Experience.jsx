@@ -144,33 +144,46 @@ const ExperienceCard = ({ experience, index }) => (
   </VerticalTimelineElement>
 );
 
-const Experience = () => (
-  <>
-    <motion.div variants={textVariant()}>
-      <p style={{
-        textAlign: "center", fontSize: "12px", fontWeight: 700,
-        letterSpacing: "0.35em", textTransform: "uppercase", color: "#6366f1", marginBottom: "10px",
-      }}>
-        What I have done so far
-      </p>
-      <h2 style={{
-        textAlign: "center", fontSize: "clamp(32px, 5vw, 56px)", fontWeight: 900,
-        background: "linear-gradient(135deg, #fff 30%, #a5b4fc 100%)",
-        WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text",
-        letterSpacing: "-0.02em", lineHeight: 1.1,
-      }}>
-        Work Experience.
-      </h2>
-    </motion.div>
+const Experience = () => {
+  const [isMobile, setIsMobile] = React.useState(false);
 
-    <div style={{ marginTop: "80px" }}>
-      <VerticalTimeline lineColor="rgba(99,102,241,0.2)">
-        {experiences.map((exp, i) => (
-          <ExperienceCard key={i} experience={exp} index={i} />
-        ))}
-      </VerticalTimeline>
-    </div>
-  </>
-);
+  React.useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth < 768);
+    };
+    checkMobile();
+    window.addEventListener("resize", checkMobile);
+    return () => window.removeEventListener("resize", checkMobile);
+  }, []);
+
+  return (
+    <>
+      <motion.div variants={textVariant()}>
+        <p style={{
+          textAlign: "center", fontSize: isMobile ? "10px" : "12px", fontWeight: 700,
+          letterSpacing: "0.35em", textTransform: "uppercase", color: "#6366f1", marginBottom: "10px",
+        }}>
+          What I have done so far
+        </p>
+        <h2 style={{
+          textAlign: "center", fontSize: isMobile ? "clamp(24px, 5vw, 42px)" : "clamp(32px, 5vw, 56px)", fontWeight: 900,
+          background: "linear-gradient(135deg, #fff 30%, #a5b4fc 100%)",
+          WebkitBackgroundClip: "text", WebkitTextFillColor: "transparent", backgroundClip: "text",
+          letterSpacing: "-0.02em", lineHeight: 1.1,
+        }}>
+          Work Experience.
+        </h2>
+      </motion.div>
+
+      <div style={{ marginTop: isMobile ? "48px" : "80px" }}>
+        <VerticalTimeline lineColor="rgba(99,102,241,0.2)">
+          {experiences.map((exp, i) => (
+            <ExperienceCard key={i} experience={exp} index={i} />
+          ))}
+        </VerticalTimeline>
+      </div>
+    </>
+  );
+};
 
 export default SectionWrapper(Experience, "work");

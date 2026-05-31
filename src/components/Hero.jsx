@@ -188,18 +188,19 @@ const Hero = memo(function Hero() {
           </motion.div>
 
           {/* Social buttons — DESKTOP */}
-          <motion.div variants={item} className="flex gap-4 mt-8 flex-wrap relative z-10">
+          <motion.div variants={item} className="mt-8 flex gap-3 flex-wrap relative z-10">
             <a
               href="https://www.linkedin.com/in/sahil-maurya-686179373/"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Open LinkedIn profile"
               title="LinkedIn"
-              className="flex items-center justify-center w-14 h-14 rounded-full
+              className="flex items-center justify-center w-[50px] h-[50px] rounded-full
                 transition-all duration-300
-                border border-indigo-500/35 text-indigo-300
-                hover:bg-indigo-500/10 hover:border-indigo-500/60 hover:scale-110"
+                border border-indigo-500/35 bg-[rgba(99,102,241,0.08)] text-indigo-200
+                hover:bg-indigo-500/16 hover:border-indigo-300 hover:scale-110"
             >
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                <svg className="w-[26px] h-[26px]" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.667-2.236-1.066 0-1.724.718-2.004 1.412-.103.25-.129.599-.129.948v5.445h-3.523s.043-8.811 0-9.728h3.523v1.377c.43-.664 1.198-1.61 2.914-1.61 2.122 0 3.714 1.388 3.714 4.371l-.004.625zm-15.864-11.02c-1.146 0-1.88-.759-1.88-1.708 0-.954.738-1.708 1.917-1.708 1.178 0 1.879.754 1.897 1.708 0 .949-.719 1.708-1.934 1.708zm-1.611 11.02h3.222v-9.728h-3.222v9.728z" />
               </svg>
             </a>
@@ -208,14 +209,33 @@ const Hero = memo(function Hero() {
               href="https://github.com/sahilmaurya2006"
               target="_blank"
               rel="noopener noreferrer"
+              aria-label="Open GitHub profile"
               title="GitHub"
-              className="flex items-center justify-center w-14 h-14 rounded-full
+              className="flex items-center justify-center w-[50px] h-[50px] rounded-full
                 transition-all duration-300
-                border border-indigo-500/35 text-indigo-300
-                hover:bg-indigo-500/10 hover:border-indigo-500/60 hover:scale-110"
+                border border-indigo-500/35 bg-[rgba(99,102,241,0.08)] text-indigo-200
+                hover:bg-indigo-500/16 hover:border-indigo-300 hover:scale-110"
             >
-              <svg className="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+              <svg className="w-[26px] h-[26px]" fill="currentColor" viewBox="0 0 24 24">
                 <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+              </svg>
+            </a>
+
+            <a
+              href="https://servify.com/in/security-hall-of-fame/"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open Security Hall of Fame"
+              title="Hall of Fame"
+              className="flex items-center justify-center w-[50px] h-[50px] rounded-full
+                transition-all duration-300
+                border border-indigo-500/35 bg-[rgba(99,102,241,0.08)] text-indigo-200
+                hover:bg-indigo-500/16 hover:border-indigo-300 hover:scale-110"
+            >
+              <svg className="w-[28px] h-[28px]" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 2.5L3.8 5.6V11c0 4.7 3 8.9 8.2 10.9 5.2-2 8.2-6.2 8.2-10.9V5.6L12 2.5Z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" />
+                <path d="M9.5 10.2A2.5 2.5 0 0 1 12 7.7a2.5 2.5 0 0 1 2.5 2.5c0 1-.6 1.8-1.4 2.2v1.8h-2.2v-1.8c-.8-.4-1.4-1.2-1.4-2.2Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" strokeLinecap="round" />
+                <path d="M12 12.4v2.1" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
               </svg>
             </a>
           </motion.div>
@@ -343,13 +363,14 @@ const Hero = memo(function Hero() {
             href="https://www.linkedin.com/in/sahil-maurya-686179373/"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Open LinkedIn profile"
             title="LinkedIn"
-            className="flex items-center justify-center w-12 h-12 rounded-full
+            className="flex items-center justify-center w-[46px] h-[46px] rounded-full
               transition-all duration-300
-              border border-indigo-500/35 text-indigo-300
-              hover:bg-indigo-500/10 hover:border-indigo-500/60 hover:scale-110"
+              border border-indigo-500/35 bg-[rgba(99,102,241,0.08)] text-indigo-200
+              hover:bg-indigo-500/16 hover:border-indigo-300 hover:scale-110"
           >
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-[23px] h-[23px]" fill="currentColor" viewBox="0 0 24 24">
               <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.475-2.236-1.667-2.236-1.066 0-1.724.718-2.004 1.412-.103.25-.129.599-.129.948v5.445h-3.523s.043-8.811 0-9.728h3.523v1.377c.43-.664 1.198-1.61 2.914-1.61 2.122 0 3.714 1.388 3.714 4.371l-.004.625zm-15.864-11.02c-1.146 0-1.88-.759-1.88-1.708 0-.954.738-1.708 1.917-1.708 1.178 0 1.879.754 1.897 1.708 0 .949-.719 1.708-1.934 1.708zm-1.611 11.02h3.222v-9.728h-3.222v9.728z" />
             </svg>
           </a>
@@ -358,14 +379,33 @@ const Hero = memo(function Hero() {
             href="https://github.com/sahilmaurya2006"
             target="_blank"
             rel="noopener noreferrer"
+            aria-label="Open GitHub profile"
             title="GitHub"
-            className="flex items-center justify-center w-12 h-12 rounded-full
+            className="flex items-center justify-center w-[46px] h-[46px] rounded-full
               transition-all duration-300
-              border border-indigo-500/35 text-indigo-300
-              hover:bg-indigo-500/10 hover:border-indigo-500/60 hover:scale-110"
+              border border-indigo-500/35 bg-[rgba(99,102,241,0.08)] text-indigo-200
+              hover:bg-indigo-500/16 hover:border-indigo-300 hover:scale-110"
           >
-            <svg className="w-5 h-5" fill="currentColor" viewBox="0 0 24 24">
+            <svg className="w-[23px] h-[23px]" fill="currentColor" viewBox="0 0 24 24">
               <path d="M12 0c-6.626 0-12 5.373-12 12 0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23.957-.266 1.983-.399 3.003-.404 1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576 4.765-1.589 8.199-6.086 8.199-11.386 0-6.627-5.373-12-12-12z" />
+            </svg>
+          </a>
+
+          <a
+            href="https://servify.com/in/security-hall-of-fame/"
+            target="_blank"
+            rel="noopener noreferrer"
+            aria-label="Open Security Hall of Fame"
+            title="Hall of Fame"
+            className="flex items-center justify-center w-[46px] h-[46px] rounded-full
+              transition-all duration-300
+              border border-indigo-500/35 bg-[rgba(99,102,241,0.08)] text-indigo-200
+              hover:bg-indigo-500/16 hover:border-indigo-300 hover:scale-110"
+          >
+            <svg className="w-[25px] h-[25px]" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 2.5L3.8 5.6V11c0 4.7 3 8.9 8.2 10.9 5.2-2 8.2-6.2 8.2-10.9V5.6L12 2.5Z" stroke="currentColor" strokeWidth="1.7" strokeLinejoin="round" />
+              <path d="M9.5 10.2A2.5 2.5 0 0 1 12 7.7a2.5 2.5 0 0 1 2.5 2.5c0 1-.6 1.8-1.4 2.2v1.8h-2.2v-1.8c-.8-.4-1.4-1.2-1.4-2.2Z" stroke="currentColor" strokeWidth="1.6" strokeLinejoin="round" strokeLinecap="round" />
+              <path d="M12 12.4v2.1" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" />
             </svg>
           </a>
         </motion.div>
